@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+let myName = "Imanze"
 const App = () =>{
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       <h2> Hello {myName} </h2>
+       <p>This is the content of the paragraph</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
