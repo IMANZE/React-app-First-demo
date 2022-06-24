@@ -1,7 +1,10 @@
 
 import './App.css';
-let myName = "Imanze"
-const App = () =>{
+import FirstComponent from './FirstComponent'; 
+import SecondComponent from './SecondComponent';
+
+const App = () => {
+  let myName = 'Imanze'
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +13,7 @@ const App = () =>{
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <SecondComponent  content = "Hello World" customClass="text-red"/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +22,8 @@ const App = () =>{
         >
           Learn React
         </a>
+        <FirstComponent /> 
+        <SecondComponent  content = "React js World" customClass="text-yellow"/>
       </header>
     </div>
   );
